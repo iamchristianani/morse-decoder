@@ -71,5 +71,3 @@ def message_decode(word)
 end
 
 message_decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
-
-gem 'rubocop', '>= 1.0', '< 2.0'
