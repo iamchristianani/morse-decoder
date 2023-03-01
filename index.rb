@@ -61,3 +61,15 @@ def word_decode(word)
   }
   result + " "
 end
+
+def message_decode(word)
+  result = ""
+  my_arr = word.split(Regexp.union("   "))
+  my_arr.each{
+    |n|
+    result += word_decode(n)
+  }
+  puts result
+end
+
+message_decode(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
